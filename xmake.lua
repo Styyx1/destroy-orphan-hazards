@@ -5,7 +5,7 @@ set_xmakever("2.8.2")
 includes("lib/commonlibsse")
 
 -- set project
-set_project("commonlibsse-template")
+set_project("destroy-orphan-hazards")
 set_version("1.0.0")
 set_license("GPL-3.0")
 
@@ -24,13 +24,13 @@ set_policy("package.requires_lock", true)
 set_config("skyrim_ae", true)
 
 -- targets
-target("commonlibsse-template")
+target("destroy-orphan-hazards")
     -- add dependencies to target
     add_deps("commonlibsse")
 
     -- add commonlibsse plugin
     add_rules("commonlibsse.plugin", {
-        name = "commonlibsse-template",
+        name = "destroy-orphan-hazards",
         author = "styyx",
         description = "SKSE64 plugin template using CommonLibSSE"
     })
