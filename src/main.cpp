@@ -69,12 +69,12 @@ namespace Hooks {
         static void LoadGameHook(RE::Hazard* a_haz, RE::BGSLoadGameBuffer* a_buf) {
             auto base = a_haz->GetBaseObject();
             if(base)
-                logs::info("Load Game Finish Hook for: {}", EDID::GetEditorID(base));
+                logs::debug("Load Game Finish Hook for: {}", EDID::GetEditorID(base));
             if (!ShouldLoad(a_haz)) {
                 RE::GarbageCollector::GetSingleton()->Add(a_haz, true);
                 return;
             }
-            logs::info("should load was true");
+            logs::debug("should load was true");
             func(a_haz, a_buf);
         }
 

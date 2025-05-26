@@ -10,8 +10,8 @@ A mod to delete hazards that should not exist anymore after a game restart, like
 
 ## Getting Started
 ```bat
-git clone https://github.com/Styyx1/destroy-ophaned-hazards --recursive
-cd destroy-ophaned-hazards
+git clone https://github.com/Styyx1/destroy-ophan-hazards --recursive
+cd destroy-ophan-hazards
 ```
 
 ### Build
